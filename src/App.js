@@ -18,7 +18,9 @@ import Credits from './components/Credits';
 import Footer from './components/Footer';
 import Socials from './components/Socials';
 import Broughttyb from './components/Broughttyb';
-import BasicSlider from './components/BasicSlider';
+import Question from './components/Question';
+
+
 
 // Assets
 
@@ -72,6 +74,7 @@ function App() {
           This leads to the first choice.
         </p>
       </Pagebody>
+      <Question />
       <Pagebody>
         <p>
           “The first hour after any crime is critical because this is the ‘golden hour’ of any investigation,” says Paul Bourne, a former Detective Superintendent who served for 30 years in the Metropolitan Police.
@@ -94,6 +97,9 @@ function App() {
         <p>
           The second choice, as senior investigating officer, concerns how high-profile the investigation should be.
         </p>
+      </Pagebody>
+      <Question />
+      <Pagebody>
         <p>
           High visibility is vital in missing person investigations. The police will work with the media to get word out. “You need to be in touch with the family and generate information for the media so public awareness can help your investigation,” explains Bourne. 
         </p>
@@ -122,6 +128,7 @@ function App() {
           This brings us to the third dilemma.
         </p>
       </Pagebody>
+      <Question />
       <Pagebody>
         <p>
           When Fulcher formally identified Christopher Halliwell as the chief suspect, one option open to him would be to immediately arrest him and search his property and car. After all, this could provide compelling forensic evidence of Halliwell’s guilt.
@@ -148,6 +155,7 @@ function App() {
           So here was the next big decision.
         </p>
       </Pagebody>
+      <Question />
       <Pagebody>
         <p>
           At this stage, Halliwell’s – and by extension Sian’s – lives were directly in the hands of Fulcher. “I couldn’t allow him to commit suicide,” he remembers. “If he killed himself, Sian would also die, because he alone knew where she was.”
@@ -189,6 +197,7 @@ function App() {
           When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
         </p>
       </Pagebody>
+      <Question />
       <CTA>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <Button
