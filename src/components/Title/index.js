@@ -9,7 +9,7 @@ function Title({ copy, img }) {
   const [title, isVisible] = makeVisible();
 
   return (
-    <div className="title" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(${isVisible ? '0%' : '-40px'}, 0, 0)` }} ref={title}>
+    <div className="title" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(${isVisible ? '0%' : '-40px'}, 0, 0)`, backgroundImage: `url(${img})` }} ref={title} >
       <h2 className="title__content">
         { copy }
       </h2>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProgressBar from '../ProgressBar';
+// import ProgressBar from '../ProgressBar';
 
 import TelegraphLogo from '../../assets/telegraph-logo.svg';
 import TelegraphLogoMobile from '../../assets/telegraph_diamond_black.svg';

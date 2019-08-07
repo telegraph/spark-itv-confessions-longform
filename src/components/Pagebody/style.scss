@@ -1,11 +1,36 @@
 .pagebody {
   margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../assets/backgrounds/bg_mid.jpg');
+  background-size: cover;
+  background-position: 0px -28px;
   padding: 25px;
   position: relative;
   z-index: 2;
   overflow: hidden;
+
+  &.no-padding {
+    padding: 0 25px;
+  }
+
+  &.no-padding-top {
+    padding-top: 0;
+  }
+
+  &.with-sidebar {
+    display: flex;
+
+    .pagebody__content {
+      padding: 25px;
+    }
+  }
+
+  &__content {
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
 
   .trigger {
     p {

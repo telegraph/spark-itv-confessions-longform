@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 // Data & external methods
 import analytics from './helpers/analytics';
+import { questions } from './data';
 
 // Components
 import Header from './components/Header';
@@ -19,10 +20,16 @@ import Footer from './components/Footer';
 import Socials from './components/Socials';
 import Broughttyb from './components/Broughttyb';
 import Question from './components/Question';
+import Sidebar from './components/Sidebar';
 
 
 
 // Assets
+import confession_h from './assets/headers/confession_header.jpg';
+import interest_h from './assets/headers/interest_header.jpg';
+import investigation_h from './assets/headers/investigation_header.jpg';
+import pursuit_h from './assets/headers/pursuit_header.jpg';
+import report_h from './assets/headers/report_header.jpg';
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -65,8 +72,8 @@ function App() {
         The following feature takes you through five crucial decisions made by Detective Superintendent Stephen Fulcher (played by Martin Freeman in the ITV drama). Behind each decision is a dilemma that offers a fascinating insight into the rules that govern modern policing and the risks that all detectives must weigh...
         </p>
       </Pagebody>
-      <Title copy="The Report" />
-      <Pagebody>
+      <Title copy="The Report" img={report_h} />
+      <Pagebody nopadding>
         <p>
           On a night out with girlfriends in March 2011, Sian O’Callaghan, 22, left a nightclub in Swindon to walk the 15 minutes home to boyfriend Kevin Reape. When she failed to arrive or respond to his frantic texts, Kevin reported Sian missing.
         </p>
@@ -74,8 +81,8 @@ function App() {
           This leads to the first choice.
         </p>
       </Pagebody>
-      <Question />
-      <Pagebody>
+      <Question question={questions[0]} />
+      <Pagebody sidebar nopaddingtop>
         <p>
           “The first hour after any crime is critical because this is the ‘golden hour’ of any investigation,” says Paul Bourne, a former Detective Superintendent who served for 30 years in the Metropolitan Police.
         </p>
@@ -92,14 +99,14 @@ function App() {
           Fulcher designated Sian’s disappearance as a Category A Enquiry, which meant he suspected her life was under threat. He told colleagues: “I’m putting the balloon up on this one” – and he was good to his word. “We treated it from the outset as a ‘Crime in Action,’” he remembers.
         </p>
       </Pagebody>
-      <Title copy="The Investigation" />
-      <Pagebody>
+      <Title copy="The Investigation" img={investigation_h} />
+      <Pagebody nopadding>
         <p>
           The second choice, as senior investigating officer, concerns how high-profile the investigation should be.
         </p>
       </Pagebody>
-      <Question />
-      <Pagebody>
+      <Question question={questions[1]} />
+      <Pagebody sidebar nopaddingtop>
         <p>
           High visibility is vital in missing person investigations. The police will work with the media to get word out. “You need to be in touch with the family and generate information for the media so public awareness can help your investigation,” explains Bourne. 
         </p>
@@ -119,8 +126,8 @@ function App() {
           Bourne says cell masts have been a godsend for police investigations: “Modern technology can tell you so much: the last person someone rang, when they rang them, the top 10 people they regularly speak to. Some networks can even tell you what was said on their text messages.”
         </p>
       </Pagebody>
-      <Title copy="People of Interest" />
-      <Pagebody>
+      <Title copy="People of Interest" img={interest_h} />
+      <Pagebody nopadding>
         <p>
           With the help of CCTV footage, Vehicle On-Line Descriptive Searching (VODS) and the Police National Computer, Fulcher and his team identified their chief suspect, local taxi driver Christopher Halliwell, played in the show by Joe Absolom.
         </p>
@@ -128,8 +135,8 @@ function App() {
           This brings us to the third dilemma.
         </p>
       </Pagebody>
-      <Question />
-      <Pagebody>
+      <Question question={questions[2]} />
+      <Pagebody sidebar nopaddingtop>
         <p>
           When Fulcher formally identified Christopher Halliwell as the chief suspect, one option open to him would be to immediately arrest him and search his property and car. After all, this could provide compelling forensic evidence of Halliwell’s guilt.
         </p>
@@ -146,8 +153,8 @@ function App() {
           “They would keep an eye on the suspect and follow them round. There is technology you can put on the suspect’s car that can keep tabs on the car. There’s also the option of a helicopter from a distance.”
         </p>
       </Pagebody>
-      <Title copy="Pursuit" />
-      <Pagebody>
+      <Title copy="Pursuit" img={pursuit_h} />
+      <Pagebody nopadding>
         <p>
           When the police surveillance team saw Halliwell go to a pharmacy and buy enough sleeping pills and paracetamol to kill himself, he was considered a suicide risk.
         </p>
@@ -155,8 +162,8 @@ function App() {
           So here was the next big decision.
         </p>
       </Pagebody>
-      <Question />
-      <Pagebody>
+      <Question question={questions[3]} />
+      <Pagebody sidebar nopaddingtop>
         <p>
           At this stage, Halliwell’s – and by extension Sian’s – lives were directly in the hands of Fulcher. “I couldn’t allow him to commit suicide,” he remembers. “If he killed himself, Sian would also die, because he alone knew where she was.”
         </p>
@@ -173,8 +180,8 @@ function App() {
           In a miked-up police car, an officer told Halliwell: “The focus of the investigation is to find Sian O’Callaghan.” He then asked him where Sian was, whether she was safe and if he could help the police find out if she was safe. The suspect offered no comment.
         </p>
       </Pagebody>
-      <Title copy="Confession" />
-      <Pagebody>
+      <Title copy="Confession" img={confession_h} />
+      <Pagebody sidebar nopaddingtop>
         <p>
           When Fulcher learned that one of his colleagues was bringing Halliwell to the police station he was livid. “I felt heat rising on my neck in an ugly red flush,” he remembers.
         </p>
@@ -197,7 +204,7 @@ function App() {
           When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
         </p>
       </Pagebody>
-      <Question />
+      <Question question={questions[4]} />
       <CTA>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <Button
