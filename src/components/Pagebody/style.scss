@@ -11,6 +11,9 @@
 
   &.no-padding {
     padding: 0 25px;
+      .pagebody__content {
+        padding: 80px 0;
+    }
   }
 
   &.no-padding-top {
@@ -21,7 +24,7 @@
     display: flex;
 
     .pagebody__content {
-      padding: 25px;
+      padding: 80px 25px 20px;
     }
   }
 

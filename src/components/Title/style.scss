@@ -2,25 +2,39 @@
   transition: 0.7s;
   transform: translate3d(-40%, 0, 0);
   flex-basis: 37%;
-  margin: 20px 0;
-  padding: 0;
+  padding: 35px 25px;
   height: 55vh;
   background-size: cover;
   background-position: center;
 
+  &__inner {
+    max-width: 990px;
+    margin: 0 0px auto;
+    display: flex;
+  }
+
   
   h2 {
+    position: relative;
     margin: 0 auto;
     text-align: left;
-    font-size: 47px;
-    line-height: 50px;
-    font-family: 'RN House Sans', arial, sans-serif;
-    font-weight: bold;
-    color: #00B6BE;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: 'Special Elite', arial, sans-serif;
+    font-weight: 300;
+    color: #fff;
 
-    &::selection {
-      background: #42145F;
-      color: white;
+    &:after {
+      content: '';
+      height: 100px;
+      width: 390px;
+      position: absolute;
+      right: -20px;
+      top: 0;
+      background: url('../../assets/stroke.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
     }
   }
 

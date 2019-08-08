@@ -16,7 +16,7 @@ function Pagebody({
         <div className="pagebody__content" ref={bodyContent}>
           {children}
         </div>
-        {sidebar && <Sidebar />}
+        {sidebar && <Sidebar sidebar={sidebar} />}
       </div>
     </>
   );

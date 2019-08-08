@@ -10,10 +10,12 @@ function Title({ copy, img }) {
 
   return (
     <div className="title" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(${isVisible ? '0%' : '-40px'}, 0, 0)`, backgroundImage: `url(${img})` }} ref={title} >
-      <h2 className="title__content">
-        { copy }
-      </h2>
-      {/* <img src={img} alt={copy} /> */}
+      <div className="title__inner">
+        <h2 className="title__content">
+          { copy }
+        </h2>
+        {/* <img src={img} alt={copy} /> */}
+      </div>
     </div>
   );
 }

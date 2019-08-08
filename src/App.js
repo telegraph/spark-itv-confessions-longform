@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 // Data & external methods
 import analytics from './helpers/analytics';
-import { questions } from './data';
+import { questions, sidebars } from './data';
 
 // Components
 import Header from './components/Header';
@@ -82,7 +82,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[0]} />
-      <Pagebody sidebar nopaddingtop>
+      <Pagebody sidebar={sidebars[0]} nopaddingtop>
         <p>
           “The first hour after any crime is critical because this is the ‘golden hour’ of any investigation,” says Paul Bourne, a former Detective Superintendent who served for 30 years in the Metropolitan Police.
         </p>
@@ -106,7 +106,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[1]} />
-      <Pagebody sidebar nopaddingtop>
+      <Pagebody sidebar={sidebars[1]} nopaddingtop>
         <p>
           High visibility is vital in missing person investigations. The police will work with the media to get word out. “You need to be in touch with the family and generate information for the media so public awareness can help your investigation,” explains Bourne. 
         </p>
@@ -136,7 +136,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[2]} />
-      <Pagebody sidebar nopaddingtop>
+      <Pagebody sidebar={sidebars[2]}nopaddingtop>
         <p>
           When Fulcher formally identified Christopher Halliwell as the chief suspect, one option open to him would be to immediately arrest him and search his property and car. After all, this could provide compelling forensic evidence of Halliwell’s guilt.
         </p>
@@ -163,7 +163,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[3]} />
-      <Pagebody sidebar nopaddingtop>
+      <Pagebody sidebar={sidebars[3]} nopaddingtop>
         <p>
           At this stage, Halliwell’s – and by extension Sian’s – lives were directly in the hands of Fulcher. “I couldn’t allow him to commit suicide,” he remembers. “If he killed himself, Sian would also die, because he alone knew where she was.”
         </p>
@@ -181,7 +181,7 @@ function App() {
         </p>
       </Pagebody>
       <Title copy="Confession" img={confession_h} />
-      <Pagebody sidebar nopaddingtop>
+      <Pagebody sidebar={sidebars[4]} nopaddingtop>
         <p>
           When Fulcher learned that one of his colleagues was bringing Halliwell to the police station he was livid. “I felt heat rising on my neck in an ugly red flush,” he remembers.
         </p>
