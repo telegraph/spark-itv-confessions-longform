@@ -9,7 +9,7 @@ export default function Question({question}) {
     <div className="question">
       <div className="question__inner">
         <div className="question__inner__img">
-          <img src="https://via.placeholder.com/570x440" alt="img"/>
+          <img src={question.img} alt="Quiz"/>
         </div>
         <div className="question__inner__choice">
         <h2>{question.question}</h2>
@@ -18,7 +18,6 @@ export default function Question({question}) {
             className={`question__inner__choice__answer ${answered ? 'answered' : ''} ${response.isCorrect ? 'correct' : 'false'}
             `}
             onClick={() => setAnswered(true) }
-          
           >{response.copy}</div>
         ))}
         </div>

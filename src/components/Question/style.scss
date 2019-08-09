@@ -5,12 +5,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  &__img {
+    img {
+      max-width: 570px;
+    }
+  }
     &__choice {
       text-align: center;
       h2 {
         color: #fff;
         margin-bottom: 30px;
         max-width: 540px;
+        font-family: "Special Elite", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300;
       }
       &__answer {
         position: relative;

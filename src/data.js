@@ -3,9 +3,16 @@ import investigationPhoto from './assets/sidebar/investigation.png';
 import pursuitPhoto from './assets/sidebar/pursuit.png';
 import reportPhoto from './assets/sidebar/report.png';
 
+import reportQuiz from './assets/quiz/report.png';
+import confessionQuiz from './assets/quiz/confession.png';
+import interestQuiz from './assets/quiz/interest.png';
+import pursuitQuiz from './assets/quiz/pursuit.png';
+import investigationQuiz from './assets/quiz/investigation.png';
+
 
 export const questions = [
   {
+    img: reportQuiz,
     question: 'What is the correct police procedure upon receiving a missing persons report?',
     answers : [
       {
@@ -18,6 +25,7 @@ export const questions = [
     ],
   },
   {
+    img: investigationQuiz,
     question: 'Should a missing persons investigation be:',
     answers : [
       {
@@ -30,6 +38,7 @@ export const questions = [
     ],
   },
   {
+    img: interestQuiz,
     question: 'Once a prime suspect is identified, what is',
     answers : [
       {
@@ -42,6 +51,7 @@ export const questions = [
     ],
   },
   {
+    img: pursuitQuiz,
     question: 'The prime suspect seems aware the net is closing in and he may be about to do harm to himself. What is the right thing to do?',
     answers : [
       {
@@ -54,6 +64,7 @@ export const questions = [
     ],
   },
   {
+    img: confessionQuiz,
     question: 'What is the right thing to do when a suspect confesses to a second murder',
     answers : [
       {
@@ -69,7 +80,7 @@ export const questions = [
 
 export const sidebars = [
   {
-    img: '',
+    img: reportPhoto,
     sticky: [
       {
         title: 'Category A Enquiry',
@@ -82,7 +93,7 @@ export const sidebars = [
     ]
   },
   {
-    img: '',
+    img: investigationPhoto,
     sticky: [
       {
         title: 'Crime in Action',
@@ -91,7 +102,6 @@ export const sidebars = [
     ]
   },
   {
-    img: '',
     sticky: [
       {
         title: 'Vehicle online descriptive search (VODS)',
@@ -104,7 +114,7 @@ export const sidebars = [
     ]
   },
   {
-    img: '',
+    img: pursuitPhoto,
     sticky: [
       {
         title: 'Police National Computer (PNC)',
@@ -113,7 +123,7 @@ export const sidebars = [
     ]
   },
   {
-    img: '',
+    img: confessionPhoto,
     sticky: [
       {
         title: 'Urgent Interview',

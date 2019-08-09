@@ -6,12 +6,39 @@
       background: url('../../assets/backgrounds/sticky.png');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      h3 {
-        padding: 0 40px;
+      background-position: 0% 40px;
+      &__inner {
+        max-width: 80%;
+        margin: 0 auto;
+        transform: rotate(-4deg);
+        h3 {
+          font-family: "Special Elite", Arial, Helvetica, sans-serif;
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: 300;
+          color: #853849;
+        }
+        h4 {
+          font-family: "Special Elite", Arial, Helvetica, sans-serif;
+          font-size: 28px;
+          line-height: 26px;
+          font-weight: 300;
+          color: #853849;
+          margin: 10px 0 ;
+        }
+        p {
+          font-family: "Special Elite", Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 26px;
+          color: #333333;
+        }
       }
-      p {
-        padding: 0 40px;
+    }
+    &__img {
+      display: flex;
+      img {
+        max-width: 500px;
+        margin: 0 auto;
       }
     }
   }

@@ -99,6 +99,10 @@ function App() {
           Fulcher designated Sian’s disappearance as a Category A Enquiry, which meant he suspected her life was under threat. He told colleagues: “I’m putting the balloon up on this one” – and he was good to his word. “We treated it from the outset as a ‘Crime in Action,’” he remembers.
         </p>
       </Pagebody>
+      <Pullquote 
+        quote="The first hour after any crime is critical because this is the ‘golden hour’ of any investigation"
+        author="Former Detective Superintendent, Paul Bourne"
+      />
       <Title copy="The Investigation" img={investigation_h} />
       <Pagebody nopadding>
         <p>
@@ -126,6 +130,10 @@ function App() {
           Bourne says cell masts have been a godsend for police investigations: “Modern technology can tell you so much: the last person someone rang, when they rang them, the top 10 people they regularly speak to. Some networks can even tell you what was said on their text messages.”
         </p>
       </Pagebody>
+      <Pullquote
+        quote="I needed help from the press and public alike"
+        author="Senior investigating officer, Stephen Fulcher"
+      />
       <Title copy="People of Interest" img={interest_h} />
       <Pagebody nopadding>
         <p>
@@ -153,6 +161,10 @@ function App() {
           “They would keep an eye on the suspect and follow them round. There is technology you can put on the suspect’s car that can keep tabs on the car. There’s also the option of a helicopter from a distance.”
         </p>
       </Pagebody>
+      <Pullquote
+        quote="I wanted him to lead us to Sian"
+        author="Senior investigating officer, Stephen Fulcher"
+      />
       <Title copy="Pursuit" img={pursuit_h} />
       <Pagebody nopadding>
         <p>
@@ -180,6 +192,10 @@ function App() {
           In a miked-up police car, an officer told Halliwell: “The focus of the investigation is to find Sian O’Callaghan.” He then asked him where Sian was, whether she was safe and if he could help the police find out if she was safe. The suspect offered no comment.
         </p>
       </Pagebody>
+      <Pullquote 
+        quote="The focus of the investigation is to find Sian O’Callaghan"
+        author="Senior investigating officer, Stephen Fulcher"
+      />
       <Title copy="Confession" img={confession_h} />
       <Pagebody sidebar={sidebars[4]} nopaddingtop>
         <p>

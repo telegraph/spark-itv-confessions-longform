@@ -1,5 +1,9 @@
 .read-more {
   position: absolute;
+  background: url('../../assets/hero/scroll_bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 19px;
   bottom: 0;
   opacity: 1;
   transition: all 1s;
@@ -11,12 +15,13 @@
     opacity: 1;
   }
 
-  p {
+  &__copy {
     color: #FFF;
     font-family: "Austin News Text Roman";
     font-weight: 500;
     font-size: 12px;
     margin: 0 auto;
+    padding: 20px;
   }
 
   svg {

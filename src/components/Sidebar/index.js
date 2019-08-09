@@ -7,7 +7,7 @@ export default function Sidebar({ sidebar }) {
     <aside className="sidebar">
       <div className="sidebar__inner">
         <div className="sidebar__inner__img">
-         {sidebar.img && <img src="https://via.placeholder.com/570x390" alt="" />}
+         {sidebar.img && <img src={sidebar.img} alt="" />}
         </div>
         <div className="sidebar__inner__stickynote">
           <div className="sidebar__inner__stickynote__inner">
