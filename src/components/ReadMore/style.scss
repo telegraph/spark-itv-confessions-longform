@@ -4,12 +4,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0px 19px;
-  bottom: 0;
+  bottom: 37vh;
   opacity: 1;
   transition: all 1s;
   margin-bottom: 30px;
   display: flex;
   flex-flow: column;
+  z-index: 2;
 
   &.show {
     opacity: 1;

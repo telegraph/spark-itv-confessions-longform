@@ -1,5 +1,8 @@
 .question {
-  background: rgb(26, 26, 26);
+  background: url('../../assets/backgrounds/quiz.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 50px 25px;
   &__inner {
     display: flex;
@@ -38,11 +41,9 @@
         &:before {
           content: '';
           position: absolute;
-          height: 30px;
-          width: 30px;
           right: -10px;
           bottom: -10px;
-          border-radius: 20px;
+          border-radius: 50%;
           opacity: 0;
           transition: opacity 0.4s 0.5s;
         }
@@ -55,12 +56,20 @@
           &.false {
             opacity: 0.4;
             &:before {
+              content: url('../../assets/quiz/cross.svg');
+              height: 30px;
+              width: 30px;
+              padding: 8px;
               background: #853849;
               opacity: 1;
             }
           }
           &.correct {
             &:before {
+              content: url('../../assets/quiz/tick.svg');
+              height: 30px;
+              width: 30px;
+              padding: 8px;
               background: #39843B;
               opacity: 1;
             }

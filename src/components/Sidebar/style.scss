@@ -4,19 +4,38 @@
   &__inner {
     &__stickynote {
       background: url('../../assets/backgrounds/sticky.png');
-      background-size: cover;
+      background-size: 100% 110%;
       background-repeat: no-repeat;
-      background-position: 0% 40px;
+      background-position: 0%;
+      height: 100%;
+      margin-top: 60px;
       &__inner {
         max-width: 80%;
         margin: 0 auto;
         transform: rotate(-4deg);
         h3 {
+          position: relative;
+          width: fit-content;
+          margin-top: 0px;
           font-family: "Special Elite", Arial, Helvetica, sans-serif;
           font-size: 30px;
           line-height: 40px;
           font-weight: 300;
           color: #853849;
+          &:before {
+            content: '';
+            background: url('../../assets/sidebar/sticky_stroke.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            height: 150%;
+            width: 110%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(5deg);
+            z-index: -1;
+          }
         }
         h4 {
           font-family: "Special Elite", Arial, Helvetica, sans-serif;

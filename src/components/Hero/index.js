@@ -22,14 +22,14 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero__absoluted">
-        <img src={connect} alt="" />
-        <img src={fingerLeft} alt="" />
-        <img src={fingerRight} alt="" />
-        <img src={map} alt="" />
-        <img src={photo} alt="" />
+        <img className="hero__absoluted__connect" src={connect} alt="connect" />
+        <img className="hero__absoluted__f-print-l" src={fingerLeft} alt="fingerprint" />
+        <img className="hero__absoluted__f-print-r" src={fingerRight} alt="fingerprint" />
+        <img className="hero__absoluted__map" src={map} alt="map" />
+        <img className="hero__absoluted__photo" src={photo} alt="Print" />
       </div>
       <div className={`hero__content ${loaded ? 'visible' : ''}`}>
-        <img src={confessionLogo} alt="A Confession" />
+        <img className="hero__content__logo" src={confessionLogo} alt="A Confession" />
         <h1>
           Five choices under pressure
         </h1>

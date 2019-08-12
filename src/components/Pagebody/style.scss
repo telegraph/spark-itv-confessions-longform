@@ -21,10 +21,21 @@
   }
 
   &.with-sidebar {
+    &:after {
+      content: '';
+      background: url('../../assets/backgrounds/pagebody-art.svg');
+      position: absolute;
+    }
     display: flex;
 
     .pagebody__content {
       padding: 80px 25px 20px;
+    }
+  }
+
+  &.sidebar-flipped {
+    .pagebody__content {
+      order: 2;
     }
   }
 

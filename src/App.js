@@ -63,7 +63,7 @@ function App() {
     <>
       <Header progress={progress} />
       <Hero />
-      <Pagebody>
+      <Pagebody first>
         <p>
           <Dropcap>B</Dropcap>
           ased on a harrowing true case, new ITV drama A Confession shows the pressure on detectives to do the right thing when lives are at stake. But what happens when doing the right thing involves an impossible choice that could cost you everything?
@@ -110,7 +110,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[1]} />
-      <Pagebody sidebar={sidebars[1]} nopaddingtop>
+      <Pagebody flipSidebar sidebar={sidebars[1]} nopaddingtop>
         <p>
           High visibility is vital in missing person investigations. The police will work with the media to get word out. “You need to be in touch with the family and generate information for the media so public awareness can help your investigation,” explains Bourne. 
         </p>
@@ -175,7 +175,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[3]} />
-      <Pagebody sidebar={sidebars[3]} nopaddingtop>
+      <Pagebody flipSidebar sidebar={sidebars[3]} nopaddingtop>
         <p>
           At this stage, Halliwell’s – and by extension Sian’s – lives were directly in the hands of Fulcher. “I couldn’t allow him to commit suicide,” he remembers. “If he killed himself, Sian would also die, because he alone knew where she was.”
         </p>

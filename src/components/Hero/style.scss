@@ -1,10 +1,10 @@
 .hero {
   position: relative;
-  height: calc(100vh - 50px);
+  height: calc(142vh - 50px);
   width: 100%;
   margin-top: 50px;
   padding: 0 25px;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../assets/backgrounds/bg_top.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.63) 0%, rgba(255, 255, 255, 0) 9%, rgba(255, 255, 255, 0.4) 100%), url('../../assets/backgrounds/bg_top.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -12,8 +12,44 @@
   text-align: center;
   overflow: hidden;
 
+  &__absoluted {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+    }
+    &__connect {
+      width: 100%;
+      top: 13%;
+      left: 0;
+      z-index: 1;
+    }
+    &__f-print-l {
+      width: 290px;
+      left: 0;
+      bottom: 0%;
+    }
+    &__f-print-r {
+      width: 290px;
+      right: -2%;
+      top: 5%;
+      z-index: 1;
+    }
+    &__map {
+      width: 860px;
+      bottom: 0%;
+      right: -7%;
+    }
+    &__photo {
+      width: 560px;
+      left: 2%;
+      top: 19%;
+    }
+  }
+
   .hero__content {
-    margin: 10% auto auto;
+    margin: 6% auto auto;
     opacity: 0;
     transform: translateX(-5%);
     transition: all 0.9s;
@@ -86,7 +122,7 @@
     }
   }
 
-  img {
+  .hero__content__logo {
     max-width: 155px;
     width: 100%;
     margin-bottom: 25px;
