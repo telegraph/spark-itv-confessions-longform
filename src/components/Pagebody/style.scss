@@ -6,7 +6,7 @@
   background-position: 0px -28px;
   padding: 25px;
   position: relative;
-  z-index: 2;
+  z-index: 0;
   overflow: hidden;
 
   &.no-padding {
@@ -21,10 +21,17 @@
   }
 
   &.with-sidebar {
+    overflow: visible;
     &:after {
       content: '';
-      background: url('../../assets/backgrounds/pagebody-art.svg');
+      background-image: url('../../assets/backgrounds/pagebody-art.svg');
+      background-size: 100%;
       position: absolute;
+      width: 100%;
+      height: 800px;
+      background-repeat: no-repeat;
+      bottom: -400px;
+      overflow: visible;
     }
     display: flex;
 
@@ -34,6 +41,10 @@
   }
 
   &.sidebar-flipped {
+    &:after {
+      background-image: url('../../assets/backgrounds/pagebody-art-flipped.svg');
+      bottom: -500px;
+    }
     .pagebody__content {
       order: 2;
     }
@@ -45,6 +56,7 @@
     max-width: 640px;
     margin: 0 auto;
     padding: 25px 0;
+    z-index: 1;
   }
 
   .trigger {

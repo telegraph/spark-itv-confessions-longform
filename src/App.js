@@ -220,13 +220,7 @@ function App() {
           When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
         </p>
       </Pagebody>
-      <Question question={questions[4]} />
-      <CTA>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <Button
-          link="https://ad.doubleclick.net/ddm/trackclk/N8083.124621MSNUK/B22370404.240723500;dc_trk_aid=443465896;dc_trk_cid=105350124;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua="
-        />
-      </CTA>
+      <Question question={questions[4]} finalQuestion />
       <Socials />
       <Broughttyb />
       <Credits />

@@ -1,13 +1,16 @@
 .question {
+  position: relative;
   background: url('../../assets/backgrounds/quiz.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px 25px;
+  z-index: 2;
   &__inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: opacity 0.4s 0.8s;
   &__img {
     img {
       max-width: 570px;
@@ -76,6 +79,28 @@
           }
         }
 
+      }
+    }
+  }
+  &__final {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    transition: opacity 0.4s 1.2s;
+    &__inner {
+      h3 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 600px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 17px;
+        line-height: 25px;
+        color: #fff;
       }
     }
   }
