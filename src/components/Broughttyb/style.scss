@@ -1,13 +1,21 @@
 .partner {
-  margin: 100px auto 60px;
   background: url('../../assets/backgrounds/quiz.png');
-  p {
-    text-align: center;
-  }
-  
-  img {
-    display: block;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  &__inner {
     margin: 0 auto;
-    max-width: 120px;
+    p {
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
+    img {
+      color: #fff;
+      display: block;
+      margin: 0 auto;
+      max-width: 120px;
+    } 
   }
 }

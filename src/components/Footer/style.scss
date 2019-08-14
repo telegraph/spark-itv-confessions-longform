@@ -4,6 +4,9 @@ a {
 }
 
 .footer {
+  background: url('../../assets/backgrounds/quiz.png');
+  background-size: cover;
+  background-position: center;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
@@ -28,14 +31,14 @@ a {
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 14px;
-  color: #000;
+  color: #fff;
 
   &::after {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     margin: 3px auto;
   }
 }
@@ -53,12 +56,12 @@ a {
 .footer ul.footer-links li:first-child {
   padding-right: 10px;
   margin-right: 9px;
-  border-right: 1px solid #000;
+  border-right: 1px solid #fff;
 }
 
 .footer ul.footer-links li a {
   display: block;
-  color: #000 !important;
+  color: #fff !important;
   font-size: 14px;
   line-height: 1;
   -webkit-font-smoothing: antialiased;

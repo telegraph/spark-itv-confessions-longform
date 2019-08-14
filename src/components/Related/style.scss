@@ -1,6 +1,8 @@
 .related-wrap {
   padding: 0 20px 60px;
   background: url('../../assets/backgrounds/quiz.png');
+  background-size: cover;
+  background-position: center;
 
   .related {
     display: flex;
@@ -19,11 +21,11 @@
     font-size: 34px;
     text-align: left;
     line-height: 1;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 26px;
     padding-top: 10px;
     max-width: 1160px;
-    color: #1E1E1C;
+    color: #fff;
     border-top: 5px solid #6F2C91;
   }
 
@@ -65,12 +67,12 @@
       font-size: 24px;
       font-weight: 500;
       line-height: 26px;
-      color: #1E1E1C;
+      color: #fff;
       font-family: "Austin News Deck Semibold";
     }
 
     a {
-      color: #000;
+      color: #fff;
       text-decoration: none;
     }
   }

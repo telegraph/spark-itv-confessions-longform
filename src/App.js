@@ -21,6 +21,7 @@ import Socials from './components/Socials';
 import Broughttyb from './components/Broughttyb';
 import Question from './components/Question';
 import Sidebar from './components/Sidebar';
+import PostBodyCopy from './components/PostBodyCopy';
 
 
 
@@ -30,6 +31,7 @@ import interest_h from './assets/headers/interest_header.jpg';
 import investigation_h from './assets/headers/investigation_header.jpg';
 import pursuit_h from './assets/headers/pursuit_header.jpg';
 import report_h from './assets/headers/report_header.jpg';
+import itvLogo from './assets/logos/itv_logo.svg';
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -71,6 +73,7 @@ function App() {
         <p>
         The following feature takes you through five crucial decisions made by Detective Superintendent Stephen Fulcher (played by Martin Freeman in the ITV drama). Behind each decision is a dilemma that offers a fascinating insight into the rules that govern modern policing and the risks that all detectives must weigh...
         </p>
+        <Socials nobackground />
       </Pagebody>
       <Title copy="The Report" img={report_h} />
       <Pagebody nopadding>
@@ -221,8 +224,12 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[4]} finalQuestion />
+      <PostBodyCopy>
+        <i><p>This feature contains extracts from Catching A Serial Killer by Stephen Fulcher (Ebury Press, £9.99)</p></i>
+        <i><p>Paul Bourne appears courtesy of Cops On Film & TV</p></i>
+      </PostBodyCopy>
       <Socials />
-      <Broughttyb />
+      <Broughttyb logo={itvLogo} />
       <Credits />
       <Related />
       <Footer />

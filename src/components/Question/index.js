@@ -10,7 +10,7 @@ export default function Question({question, finalQuestion}) {
     <div className="question">
       <div className="question__inner" style={{opacity: `${finalQuestionDone ? 0 : 1}`}}>
         <div className="question__inner__img">
-          <img src={question.img} alt="img"/>
+          <img loading="lazy" src={question.img} alt="img"/>
         </div>
         <div className="question__inner__choice">
         <h2>{question.question}</h2>

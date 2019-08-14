@@ -2,11 +2,13 @@ import React from 'react';
 
 import './style.scss';
 
-function Broughttyb() {
+function Broughttyb({logo}) {
   return (
     <div className="partner">
-      <p>Brought to you by</p>
-      <img src="" alt="logo" />
+      <div className="partner__inner">
+        <p>Brought to you by</p>
+        <img src={logo} alt="logo" />
+      </div>
     </div>
   );
 }

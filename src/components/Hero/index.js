@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReadMore from '../ReadMore';
+import Typist from 'react-typist';
 
 import './style.scss';
 
@@ -30,9 +31,11 @@ function Hero() {
       </div>
       <div className={`hero__content ${loaded ? 'visible' : ''}`}>
         <img className="hero__content__logo" src={confessionLogo} alt="A Confession" />
-        <h1>
-          Five choices under pressure
+        <Typist>
+          <h1>
+            Five choices under pressure
         </h1>
+        </Typist>
         <p className="hero__content__copy">
           In a case of abduction, every choice a detective makes has consequences. Here are just five. Could you do the right thing?
         </p>

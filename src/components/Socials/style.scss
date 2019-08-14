@@ -1,11 +1,24 @@
 .socials {
-  max-width: 590px;
-  margin: 90px auto 0;
-  padding: 0 20px;
+  background: url('../../assets/backgrounds/quiz.png');
+  background-size: cover;
+  background-position: center;
+
+  &--nobackground {
+    background: none;
+
+    .socials__inner {
+      padding: 0 20px;
+      display: block;
+    }
+
+  }
+
+  &__inner {
+    max-width: 590px;
+  margin: 0 auto;
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
-  background: url('../../assets/backgrounds/quiz.png');
-
   a {
     text-decoration: none;
     border: 0;
@@ -14,5 +27,6 @@
 
   img {
     height: 32px;
+  }
   }
 }
