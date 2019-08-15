@@ -17,6 +17,7 @@
       max-width: 500px;
       background: url('../../assets/backgrounds/quote.svg');
       background-size: contain;
+      background-position: center;
       background-repeat: no-repeat;
       padding-top: 30px;
       padding-bottom: 30px;
@@ -40,6 +41,10 @@
         text-align: center;
         margin: 0;
         padding: 0px 80px;
+        @media (max-width: 730px) {
+          font-size: 19px;
+          line-height: 21px;
+        }
       }
       p {
         color: #fff;
@@ -49,6 +54,10 @@
         text-align: center;
         margin: 15px 0 0;
         padding: 0px 80px;
+        @media (max-width: 730px) {
+          font-size: 9px;
+          margin-top: 4px;
+        }
       }
     }
   }

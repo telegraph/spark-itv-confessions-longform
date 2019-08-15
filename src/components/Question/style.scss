@@ -10,10 +10,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     transition: opacity 0.4s 0.8s;
   &__img {
     img {
       max-width: 570px;
+      @media (max-width: 730px) {
+        width: 100%;
+      }
     }
   }
     &__choice {
@@ -26,6 +30,10 @@
         font-size: 30px;
         line-height: 40px;
         font-weight: 300;
+        @media (max-width: 730px) {
+          font-size: 25px;
+          line-height: 32px;
+        }
       }
       &__answer {
         position: relative;
@@ -80,6 +88,9 @@
           }
         }
 
+      }
+      @media (max-width: 730px) {
+        margin-top: 30px;
       }
     }
   }

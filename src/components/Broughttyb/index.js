@@ -7,7 +7,7 @@ function Broughttyb({logo}) {
     <div className="partner">
       <div className="partner__inner">
         <p>Brought to you by</p>
-        <img src={logo} alt="logo" />
+        <img loading="lazy" src={logo} alt="logo" />
       </div>
     </div>
   );

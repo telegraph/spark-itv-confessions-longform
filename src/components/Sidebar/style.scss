@@ -22,6 +22,11 @@
           line-height: 40px;
           font-weight: 300;
           color: #853849;
+          @media (max-width: 730px) {
+            font-size: 22px;
+            line-height: 62px;
+            margin-bottom: 0;
+          }
           &:before {
             content: '';
             background: url('../../assets/sidebar/sticky_stroke.svg');
@@ -35,6 +40,9 @@
             left: 50%;
             transform: translateX(-50%) rotate(5deg);
             z-index: -1;
+            @media (max-width: 730px) {
+              background-position: 0px 10px;
+            }
           }
         }
         h4 {
@@ -51,6 +59,20 @@
           line-height: 26px;
           color: #333333;
         }
+        .stickynote-title {
+          @media (max-width: 730px) {
+            font-size: 21px;
+            line-height: 21px;
+            margin-bottom: 5px;
+          }
+        }
+        .stickynote-copy {
+          @media (max-width: 730px) {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+          }
+        }
       }
     }
     &__img {
@@ -58,7 +80,13 @@
       img {
         max-width: 500px;
         margin: 0 auto;
+        @media (max-width: 730px) {
+          width: 100%;
+        }
       }
     }
+  }
+  @media (max-width: 730px) {
+    padding: 20px;
   }
 }

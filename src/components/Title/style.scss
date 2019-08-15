@@ -45,4 +45,19 @@
     margin: 0 auto;
   }
 
+  @media (max-width: 730px) {
+    height: 30vh;
+    padding: 35px 20px;
+    &__inner {
+      .title__content {
+        font-size: 60px;
+        &:after {
+          width: 280px;
+          right: -30px;
+          top: 5px;
+        }
+      }
+    }
+  }
+
 }
