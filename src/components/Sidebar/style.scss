@@ -1,5 +1,5 @@
 .sidebar {
-  padding: 100px 0;
+  padding: 100px 25px;
 
   &__inner {
     &__stickynote {
@@ -76,8 +76,8 @@
       }
     }
     &__img {
-      display: flex;
       img {
+        display: block;
         max-width: 500px;
         margin: 0 auto;
         @media (max-width: 730px) {

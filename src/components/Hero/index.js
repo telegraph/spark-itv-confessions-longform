@@ -29,9 +29,9 @@ function Hero() {
         <img className="hero__absoluted__map" src={map} alt="map" />
         <img className="hero__absoluted__photo" src={photo} alt="Print" />
       </div>
-      <div className={`hero__content ${loaded ? 'visible' : ''}`}>
+      <div className="hero__content">
         <img className="hero__content__logo" src={confessionLogo} alt="A Confession" />
-        <Typist>
+        <Typist cursor={{show: false}}>
           <h1>
             Five choices under pressure
         </h1>

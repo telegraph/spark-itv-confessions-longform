@@ -2,6 +2,7 @@
   "name": "spark-itv-confessions-longform",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "/content/dam/spark/component-assets/custom/2019/itv/confession-longform/",
   "dependencies": {
     "eslint-config-react-app": "^4.0.1",
     "gsap": "^2.1.3",

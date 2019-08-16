@@ -50,10 +50,9 @@
 
   .hero__content {
     margin: 6% auto auto;
-    opacity: 0;
-    transform: translateX(-5%);
     transition: all 0.9s;
     max-width: 750px;
+    z-index: 2;
 
     &.visible {
       transform: translateX(0%);

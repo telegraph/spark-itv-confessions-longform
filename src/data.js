@@ -26,7 +26,7 @@ export const questions = [
   },
   {
     img: investigationQuiz,
-    question: 'Should a missing persons investigation be:',
+    question: 'Should a missing persons investigation be...?',
     answers : [
       {
         copy: 'As discreet as possible',
@@ -39,7 +39,7 @@ export const questions = [
   },
   {
     img: interestQuiz,
-    question: 'Once a prime suspect is identified, what is',
+    question: 'Once a prime suspect is identified, what is the right thing to do?',
     answers : [
       {
         copy: 'Arrest him',
@@ -52,7 +52,7 @@ export const questions = [
   },
   {
     img: pursuitQuiz,
-    question: 'The prime suspect seems aware the net is closing in and he may be about to do harm to himself. What is the right thing to do?',
+    question: 'The prime suspect seems aware the net is closing in and he may be about to harm himself. What is the right thing to do?',
     answers : [
       {
         copy: 'Arrest him to save his life',
@@ -65,11 +65,10 @@ export const questions = [
   },
   {
     img: confessionQuiz,
-    question: 'What is the right thing to do when a suspect confesses to a second murder',
+    question: 'What is the right thing to do when a suspect confesses to a second crime?',
     answers : [
       {
         copy: 'Once again remind him of his right to silence',
-        isCorrect: true,
       },
       {
         copy: 'Let him talk',
@@ -104,11 +103,11 @@ export const sidebars = [
   {
     sticky: [
       {
-        title: 'Vehicle online descriptive search (VODS)',
+        title: 'Vehicle Online Descriptive Search (VODS)',
         copy: 'This allows officers to search the vehicles database using registration numbers, postcodes and colour details to narrow the list to potential suspect vehicles. “You can tap in a partial sighting, say: a green Escort, with a part index number: FX1,” says Bourne. “VODS can then try and find all of those types of vehicles in the Swindon area.”'
       },
       {
-        title: 'Trace, interview or eliminate (TIE)',
+        title: 'Trace, Interview or Eliminate (TIE)',
         copy: 'This is a process used in major incident investigations, which aims to narrow down the pool of potential suspects until you are left with the culprit. “It’s a simple process,” says Bourne. “You put a marker on someone, trace them, interview them and potentially eliminate them from the inquiry.”'
       },
     ]

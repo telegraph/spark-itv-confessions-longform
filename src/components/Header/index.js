@@ -4,6 +4,7 @@ import React from 'react';
 
 import TelegraphLogo from '../../assets/telegraph-logo.svg';
 import TelegraphLogoMobile from '../../assets/telegraph_diamond_black.svg';
+import itvLogo from '../../assets/logos/itv_logo.svg';
 
 import './style.scss';
 
@@ -21,8 +22,8 @@ const Header = (props) => (
 
       <div className="btyb-wrapper">
         <span className="btyb">Brought to you by</span>
-        <a rel="nofollow" href="https://business.natwest.com/business.html" target="_blank">
-          logo
+        <a rel="nofollow" href="https://www.itv.com/" target="_blank">
+          <img className="client-logo" src={itvLogo} alt="ITV" />
         </a>
       </div>
     </div>

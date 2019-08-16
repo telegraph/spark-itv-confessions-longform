@@ -1,5 +1,6 @@
 .post-body {
 margin: 0;
+padding: 0 25px;
 background: url('../../assets/backgrounds/quiz.png');
 background-size: cover;
 background-position: center;
@@ -9,5 +10,9 @@ p {
   text-align: center;
   font-size: 17px;
   line-height: 25px;
+}
+
+a {
+  color: #fff;
 }
 }

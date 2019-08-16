@@ -16,7 +16,7 @@
       position: relative;
       max-width: 500px;
       background: url('../../assets/backgrounds/quote.svg');
-      background-size: contain;
+      background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
       padding-top: 30px;
@@ -61,5 +61,7 @@
       }
     }
   }
-
+  @media(max-width: 730px) {
+    background-size: 190.5% 1280px;
+  }
   }

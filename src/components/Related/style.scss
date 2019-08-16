@@ -59,6 +59,19 @@
       @media (min-width: 730px) {
         height: 228px;
       }
+
+      &.t1 {
+        background-image: url('../../assets/related/love-crime-op.jpg');
+      }
+
+      &.t2 {
+        background-image: url('../../assets/related/martin-freeman-op.jpg');
+      }
+
+      &.t3 {
+        background-image: url('../../assets/related/true-crime-podcasts-op.jpg');
+      }
+
     }
 
     .description {

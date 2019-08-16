@@ -13,17 +13,17 @@ const Credits = () => (
           </div>
 
           <div className="credit-listing">
-            Words
-          <span className="credit-name"><strong>Rob Waugh</strong></span>
             Commissioning Editor
-          <span className="credit-name"><strong>Rachael Adams</strong></span>
+          <span className="credit-name"><strong>Simon Lewis</strong></span>
+            Words
+          <span className="credit-name"><strong>Chas Newkey-Burden</strong></span>
           </div>
 
           <div className="credit-listing">
-            Sub-editor
-          <span className="credit-name"><strong>Richard Dixon</strong></span>
+            Head of Design
+          <span className="credit-name"><strong>Matt Brant</strong></span>
 
-            Lead Designer
+            Digital Designer
           <span className="credit-name"><strong>Betty Guerra</strong></span>
           </div>
 
@@ -31,13 +31,21 @@ const Credits = () => (
             Digital Developer
           <span className="credit-name"><strong>Alex Hooper</strong></span>
 
-            Picture Editor
-          <span className="credit-name"><strong>Alice Griffiths</strong></span>
+            Project Manager
+          <span className="credit-name"><strong>Harrie Dumenil</strong></span>
           </div>
 
           <div className="credit-listing">
-            Project Manager
-          <span className="credit-name"><strong>Ellie Evans</strong></span>
+            Picture Editor
+          <span className="credit-name"><strong>Alex Kelly</strong></span>
+
+            Web Editor
+          <span className="credit-name"><strong>Elin Evans</strong></span>
+          </div>
+
+          <div className="credit-listing">
+            Sub Editor
+          <span className="credit-name"><strong>Tim Cumming</strong></span>
           </div>
         </div>
       </div>

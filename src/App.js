@@ -24,14 +24,13 @@ import Sidebar from './components/Sidebar';
 import PostBodyCopy from './components/PostBodyCopy';
 
 
-
 // Assets
 import confession_h from './assets/headers/confession_header.jpg';
 import interest_h from './assets/headers/interest_header.jpg';
 import investigation_h from './assets/headers/investigation_header.jpg';
 import pursuit_h from './assets/headers/pursuit_header.jpg';
 import report_h from './assets/headers/report_header.jpg';
-import itvLogo from './assets/logos/itv_logo.svg';
+import itvLogo from './assets/logos/itv_logo_white.svg';
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -68,7 +67,7 @@ function App() {
       <Pagebody first>
         <p>
           <Dropcap>B</Dropcap>
-          ased on a harrowing true case, new ITV drama A Confession shows the pressure on detectives to do the right thing when lives are at stake. But what happens when doing the right thing involves an impossible choice that could cost you everything?
+          ased on a harrowing true case, new ITV drama <i>A Confession</i> shows the pressure on detectives to do the right thing when lives are at stake. But what happens when doing the right thing involves an impossible choice that could cost you everything?
         </p>
         <p>
         The following feature takes you through five crucial decisions made by Detective Superintendent Stephen Fulcher (played by Martin Freeman in the ITV drama). Behind each decision is a dilemma that offers a fascinating insight into the rules that govern modern policing and the risks that all detectives must weigh...
@@ -220,15 +219,15 @@ function App() {
         The situation was highly delicate. Bourne says that, had he been in Fulcher’s shoes, he would have felt like he was “treading on eggshells”.
         </p>
         <p>
-          When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
+          When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
         </p>
       </Pagebody>
       <Question question={questions[4]} finalQuestion />
       <PostBodyCopy>
-        <i><p>This feature contains extracts from Catching A Serial Killer by Stephen Fulcher (Ebury Press, £9.99)</p></i>
-        <i><p>Paul Bourne appears courtesy of Cops On Film & TV</p></i>
+        <i><p>This feature contains extracts from <a href="https://www.penguin.co.uk/books/111/1113996/catching-a-serial-killer/9781785036279.html" target="_blank" rel="noopener noreferrer">Catching A Serial Killer by Stephen Fulcher</a> (Ebury Press, £9.99)</p></i>
+        <i><p>Paul Bourne appears courtesy of <a href="https://copsonfilmandtv.co.uk/" target="_blank" rel="noopener noreferrer">Cops On Film & TV</a></p></i>
       </PostBodyCopy>
-      <Socials />
+      <Socials white />
       <Broughttyb logo={itvLogo} />
       <Credits />
       <Related />
