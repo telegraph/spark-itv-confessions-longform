@@ -1,26 +1,73 @@
 .pullquote {
-  z-index: -1;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../assets/backgrounds/bg_mid.jpg');
-  background-size: cover;
   position: relative;
   width: 100%;
   display: flex;
   padding: 85px 25px;
+  margin-top: -400px;
+
+  @media (max-width: 730px) {
+    padding: 85px 8px;
+  }
 
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     position: relative;
+
     &__quote {
       position: relative;
       max-width: 500px;
-      background: url('../../assets/backgrounds/quote.svg');
+      background-image: url('../../assets/backgrounds/quote.svg');
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 40px;
+
+      // customize all the quotes...
+      &.report {
+        max-width: 550px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        @media (max-width: 730px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      &.investigation {
+        background-image: url('../../assets/pullquotes/investigation_quote.svg');
+        background-size: contain;
+      }
+
+      &.interest {
+        background-image: url('../../assets/pullquotes/interest_quote.svg');
+        max-width: 350px;
+
+        @media (max-width: 730px) {
+          background-size: contain;
+          max-width: 330px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        h4 {
+          padding: 0 50px;
+        }
+      }
+
+      &.pursuit {
+        background-image: url('../../assets/pullquotes/pursuit_quote.svg');
+        background-size: contain;
+
+        @media (max-width: 730px) {
+          padding-top: 40px;
+          padding-bottom: 50px;
+        }
+      }
+
       &:before {
         content: '';
         position: absolute;
@@ -34,26 +81,31 @@
         background-repeat: no-repeat;
         background-position: center;
       }
+
       h4 {
         color: #fff;
         font-size: 30px;
-        line-height: 35px;
+        line-height: 30px;
         text-align: center;
         margin: 0;
         padding: 0px 80px;
+
         @media (max-width: 730px) {
           font-size: 19px;
           line-height: 21px;
+          padding: 0 40px;
         }
       }
+
       p {
         color: #fff;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 21px;
         font-style: italic;
         text-align: center;
         margin: 15px 0 0;
         padding: 0px 80px;
+
         @media (max-width: 730px) {
           font-size: 9px;
           margin-top: 4px;
@@ -61,7 +113,4 @@
       }
     }
   }
-  @media(max-width: 730px) {
-    background-size: 190.5% 1280px;
-  }
-  }
+}

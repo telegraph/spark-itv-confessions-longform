@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Tlogo from '../../assets/telegraph_diamond_black.svg';
+import Tlogo from '../../assets/telegraph_diamond.svg';
 
 import './style.scss';
 

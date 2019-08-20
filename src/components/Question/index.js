@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './style.scss';
 
 export default function Question({question, finalQuestion}) {
-
   const [answered, setAnswered] = useState(false);
   const [finalQuestionDone, setFinalQuestionDone] = useState(false);
 

@@ -3,19 +3,23 @@
   background-size: cover;
   background-position: center;
   padding: 40px 0;
+
   &__inner {
     margin: 0 auto;
+
     p {
       color: #fff;
       text-align: center;
       margin: 0 auto;
+      font-size: 12px;
+      font-family: "Telesans Text Regular", "Telesans Text", sans-serif;
     }
-    
+
     img {
       color: #fff;
       display: block;
-      margin: 0 auto;
-      max-width: 120px;
-    } 
+      margin: 20px auto 10px;
+      max-width: 118px;
+    }
   }
 }

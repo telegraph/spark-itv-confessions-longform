@@ -13,6 +13,7 @@ import photo from '../../assets/hero/photo.png';
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     // On mount
     setTimeout(() => {
@@ -29,17 +30,21 @@ function Hero() {
         <img className="hero__absoluted__map" src={map} alt="map" />
         <img className="hero__absoluted__photo" src={photo} alt="Print" />
       </div>
+
       <div className="hero__content">
         <img className="hero__content__logo" src={confessionLogo} alt="A Confession" />
+
         <Typist cursor={{show: false}}>
           <h1>
             Five choices under pressure
-        </h1>
+          </h1>
         </Typist>
+
         <p className="hero__content__copy">
           In a case of abduction, every choice a detective makes has consequences. Here are just five. Could you do the right thing?
         </p>
       </div>
+
       <ReadMore content="Scroll to read on" />
     </div>
   );

@@ -2,11 +2,12 @@ import React from 'react';
 
 import './style.scss';
 
+import capB from '../../assets/intro_drop_cap_B.svg';
+
+
 const Dropcap = ({ children }) => (
   <span className="dropcap">
-    <span className="dropcap__letter">
-      {children}
-    </span>
+    <img src={capB} alt="B" />
   </span>
 );
 

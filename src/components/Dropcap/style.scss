@@ -1,19 +1,8 @@
 .dropcap {
   float: left;
-  width: 60px;
-  height: 51px;
-  overflow: visible;
-  
-  .dropcap__letter {
-    background: url('../../assets/backgrounds/dropcap.svg');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    font-size: 30px;
-    font-family: "Special Elite", Arial, Helvetica, sans-serif;
-    color: #853849;
-    font-size: 95px;
-    line-height: normal;
-  }
-  
+	width: 65px;
+	height: 59px;
+	overflow: visible;
+	padding-top: 9px;
+	margin-right: 7px;
 }

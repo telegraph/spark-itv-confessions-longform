@@ -17,7 +17,7 @@ body * {
 
 body *::selection {
   color: #fff;
-  background: #42145F;
+  background: #853849;
 }
 
 body,
@@ -131,4 +131,25 @@ h3 {
       url('./assets/fonts/special-elite/SpecialElite-Regular.svg#SpecialElite-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+// disable background on the footer concrete layout, and apply it only once, so we can repeat it
+.concrete-background {
+  background-image: url('./assets/backgrounds/quiz.png');
+  background-size: 100%;
+  background-repeat: repeat;
+
+  @media (max-width: 730px) {
+    background-image: url('./assets/backgrounds/concrete-mobile.jpg');
+  }
+
+  .footer,
+  .related-wrap,
+  .credits,
+  .partner,
+  .socials,
+  .post-body,
+  .question {
+    background-image: none;
+  }
 }

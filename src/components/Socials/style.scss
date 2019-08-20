@@ -9,24 +9,28 @@
     .socials__inner {
       padding: 0 20px;
       display: block;
-    }
 
+      @media (max-width: 730px) {
+        padding-left: 0;
+      }
+    }
   }
 
   &__inner {
     max-width: 590px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  a {
-    text-decoration: none;
-    border: 0;
-    margin-right: 10px;
-  }
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
 
-  img {
-    height: 32px;
-  }
+    a {
+      text-decoration: none;
+      border: 0;
+      margin-right: 10px;
+    }
+
+    img {
+      height: 32px;
+    }
   }
 }

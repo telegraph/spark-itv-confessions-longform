@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import ProgressBar from '../ProgressBar';
+ import ProgressBar from '../ProgressBar';
 
 import TelegraphLogo from '../../assets/telegraph-logo.svg';
 import TelegraphLogoMobile from '../../assets/telegraph_diamond_black.svg';
@@ -11,7 +11,6 @@ import './style.scss';
 const Header = (props) => (
   <div className="header">
     <div className="header-bar">
-
       <a href="https://www.telegraph.co.uk/" className="desktop-only">
         <img className="the-logo" src={TelegraphLogo} alt="The Telegraph" />
       </a>
@@ -27,6 +26,8 @@ const Header = (props) => (
         </a>
       </div>
     </div>
+
+    <ProgressBar progress={props.progress} />
   </div>
 );
 
