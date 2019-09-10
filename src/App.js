@@ -82,7 +82,7 @@ function App() {
           ased on a harrowing true case, new ITV drama <i>A Confession</i> shows the pressure on detectives to do the right thing when lives are at stake. But what happens when doing the right thing involves an impossible choice that could cost you everything?
         </p>
         <p>
-        The following feature takes you through five crucial decisions made by Detective Superintendent Stephen Fulcher (played by Martin Freeman in the ITV drama). Behind each decision is a dilemma that offers a fascinating insight into the rules that govern modern policing and the risks that all detectives must weigh...
+          The following feature takes you through five crucial decisions made by Detective Superintendent Stephen Fulcher (played by Martin Freeman in the ITV drama). Behind each decision is a dilemma that offers a fascinating insight into the rules that govern modern policing and the risks that all detectives must weigh...
         </p>
         <Socials nobackground />
       </Pagebody>
@@ -162,7 +162,7 @@ function App() {
         </p>
       </Pagebody>
       <Question question={questions[2]} />
-      <Pagebody sidebar={sidebars[2]}nopaddingtop>
+      <Pagebody sidebar={sidebars[2]} nopaddingtop>
         <p>
           When Fulcher formally identified Christopher Halliwell as the chief suspect, one option open to him would be to immediately arrest him and search his property and car. After all, this could provide compelling forensic evidence of Halliwell’s guilt.
         </p>
@@ -236,7 +236,7 @@ function App() {
           Bourne explains that a confession secured in such circumstances would be problematic in court. “There would most likely be a trial within a trial,” he says. “The defence might suggest it had been gained by oppressive means and the trial judge would ultimately have to make the call.”
         </p>
         <p>
-        The situation was highly delicate. Bourne says that, had he been in Fulcher’s shoes, he would have felt like he was “treading on eggshells”.
+          The situation was highly delicate. Bourne says that, had he been in Fulcher’s shoes, he would have felt like he was “treading on eggshells”.
         </p>
         <p>
           When Fulcher arrived, Halliwell did what he had hoped: he told him what had happened to Sian. Then he made a second, unexpected confession. He asked Fulcher: “Do you want another one?” suggesting he had abducted a second girl.
@@ -247,6 +247,10 @@ function App() {
         <Question question={questions[4]} finalQuestion />
 
         <PostBodyCopy>
+          <h2>Watch the trailer</h2>
+          <div className="iframe-container">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/zUCpG84pfOg' frameborder='0' allowfullscreen></iframe></div>
+          </div>
           <i><p>This feature contains extracts from <a className="underline" href="https://www.penguin.co.uk/books/111/1113996/catching-a-serial-killer/9781785036279.html" target="_blank" rel="noopener noreferrer">Catching A Serial Killer by Stephen Fulcher</a> (Ebury Press, £9.99)<br /><span className="copyright">Copyright © Stephen Fulcher 2017</span></p></i>
           <i><p>Paul Bourne appears courtesy of <a className="underline" href="https://copsonfilmandtv.co.uk/" target="_blank" rel="noopener noreferrer">Cops On Film & TV</a></p></i>
         </PostBodyCopy>
