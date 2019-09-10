@@ -219,7 +219,7 @@ function App() {
       />
 
       <Title copy="" img={confession_h} highlighted="Confession" highlightImg={confession_stroke} />
-      <Pagebody sidebar={sidebars[4]} nopaddingtop>
+      <Pagebody sidebar={sidebars[4]} nopaddingtop nopaddingbottom>
         <p>
           When Fulcher learned that one of his colleagues was bringing Halliwell to the police station he was livid. “I felt heat rising on my neck in an ugly red flush,” he remembers.
         </p>
@@ -247,8 +247,8 @@ function App() {
         <Question question={questions[4]} finalQuestion />
 
         <PostBodyCopy>
-          <i><p>This feature contains extracts from <a href="https://www.penguin.co.uk/books/111/1113996/catching-a-serial-killer/9781785036279.html" target="_blank" rel="noopener noreferrer">Catching A Serial Killer by Stephen Fulcher</a> (Ebury Press, £9.99)</p></i>
-          <i><p>Paul Bourne appears courtesy of <a href="https://copsonfilmandtv.co.uk/" target="_blank" rel="noopener noreferrer">Cops On Film & TV</a></p></i>
+          <i><p>This feature contains extracts from <a className="underline" href="https://www.penguin.co.uk/books/111/1113996/catching-a-serial-killer/9781785036279.html" target="_blank" rel="noopener noreferrer">Catching A Serial Killer by Stephen Fulcher</a> (Ebury Press, £9.99)<br /><span className="copyright">Copyright © Stephen Fulcher 2017</span></p></i>
+          <i><p>Paul Bourne appears courtesy of <a className="underline" href="https://copsonfilmandtv.co.uk/" target="_blank" rel="noopener noreferrer">Cops On Film & TV</a></p></i>
         </PostBodyCopy>
 
         <Socials white />

@@ -107,7 +107,7 @@ export const sidebars = [
         copy: 'This allows officers to search the vehicles database using registration numbers, postcodes and colour details to narrow the list to potential suspect vehicles. “You can tap in a partial sighting, say: a green Escort, with a part index number: FX1,” says Bourne. “VODS can then try and find all of those types of vehicles in the Swindon area.”'
       },
       {
-        title: 'Trace, Interview or Eliminate (TIE)',
+        title: 'Trace, Interview or Eliminate (TIE)',
         copy: 'This is a process used in major incident investigations, which aims to narrow down the pool of potential suspects until you are left with the culprit. “It’s a simple process,” says Bourne. “You put a marker on someone, trace them, interview them and potentially eliminate them from the inquiry.”'
       },
     ]
@@ -129,7 +129,7 @@ export const sidebars = [
         copy: 'A provision in the Police and Criminal Evidence Act allows a police officer to interview a suspect without a caution and without a solicitor present, where he believes there is an imminent threat to life. “But there’s an important rule here,” says Bourne. “You can only question the suspect in this interview until you get the urgent information that you need.”'
       },
       {
-        title: 'Police and Criminal Evidence Act',
+        title: 'Police and Criminal Evidence Act',
         copy: 'Introduced in 1984, the Police and Criminal Evidence Act (PACE) aimed to carefully balance the rights of the individual against the powers of the police. It introduced new guidelines on everything from stop and search to arrest and interviews. “It’s like your officer’s bible,” says Bourne. “It’s the framework for powers of police officers in England and Wales.”'
       },
     ]

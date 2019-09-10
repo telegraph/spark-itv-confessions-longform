@@ -17,7 +17,23 @@ export default function Question({question, finalQuestion}) {
           <div
             className={`question__inner__choice__answer ${answered ? 'answered' : ''} ${response.isCorrect ? 'correct' : 'false'}
             `}
-            onClick={() => {if (finalQuestion) {setFinalQuestionDone(true); return;} setAnswered(true)} }
+            onClick={() => {
+              if (finalQuestion) {
+                setFinalQuestionDone(true);
+
+                // scroll the user in view of the answer
+                setTimeout(() => {
+                  const answers = document.querySelectorAll('.question__final')
+                  answers[answers.length - 1].scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                  });
+                }, 800);
+
+                return;
+              }
+              setAnswered(true)}
+            }
           >
             {response.copy}
           </div>
@@ -30,7 +46,7 @@ export default function Question({question, finalQuestion}) {
               Watch <i>A Confession</i> to see which choice Detective Superintendent Fulcher made. And how it changed his life forever.
             </h3>
             <h4>
-              <i>A Confession</i> - Mondays at 9pm on ITV. Watch now on <a href="https://www.itv.com/hub/itv" target="blank" rel="noreferrer noopener">ITV Hub</a>
+              <i>A Confession</i> - Mondays at 9pm on ITV. Watch now on <a className="underline" href="https://www.itv.com/hub/itv" target="blank" rel="noreferrer noopener">ITV Hub</a>
             </h4>
           </div>
       </div>

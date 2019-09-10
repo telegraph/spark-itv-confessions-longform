@@ -7,7 +7,7 @@ function Broughttyb({logo}) {
     <div className="partner">
       <div className="partner__inner">
         <p>Brought to you by</p>
-        <img loading="lazy" src={logo} alt="logo" />
+        <a href="https://www.itv.com/" target="_blank" rel="nofollow"><img loading="lazy" src={logo} alt="logo" /></a>
       </div>
     </div>
   );

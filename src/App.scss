@@ -74,8 +74,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Austin News Deck", Georgia, serif;
-  font-weight: 600;
+  font-family: "Austin News Deck Semibold", "Austin News Deck", Georgia, serif;
+  font-weight: 700;
   color: #333333;
 }
 
@@ -152,4 +152,15 @@ h3 {
   .question {
     background-image: none;
   }
+}
+
+.copyright {
+  font-family: "Austin News Text Semibold", "Austin News Text", Georgia, serif;
+  font-style: italic;
+  font-size: smaller;
+  vertical-align: super;
+}
+
+a.underline {
+  text-decoration: underline !important;
 }

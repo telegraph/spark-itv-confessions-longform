@@ -36,7 +36,7 @@ function Hero() {
 
         <Typist cursor={{show: false}}>
           <h1>
-            Five choices under pressure
+              Five choices<br />under pressure
           </h1>
         </Typist>
 
